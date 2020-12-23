@@ -1,0 +1,40 @@
+#sticky-footer {
+    flex-shrink: none;
+}
+footer{
+    background-color: $color-dark;
+    padding: 30px 0;
+    p{
+    text-align: center;
+    color: $color-principal;
+    }
+}
+.social-icons{
+    text-align: center;
+    ul{
+        margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+        display:inline-block;
+    }
+    }
+}
+.social-icons__button{
+    text-decoration: none;
+        display: block;
+        padding: 1rem 1.5rem;
+        color: $gray-light;
+        font-size: $font-size-h3;
+        transition: all 0.2s linear;
+}
+@each $rrss, $color in (behance: #053eff, github: #6cc644, linkedin: #0072b1, dribbble: #E94C88) {
+    .social-icons__button:hover.#{$rrss}{
+        color: $color;
+        }
+}
+.social-icons__button:hover.instagram{
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}

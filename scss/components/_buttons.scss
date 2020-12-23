@@ -1,0 +1,47 @@
+/*
+.button{
+    align-items: center;
+    background-color: $color-principal;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 1px 2px 8px 0px $gray-light;
+    color: white;
+    display: inline-block;
+    display: inline-flex;
+    height: 40px;
+    justify-content: space-between;
+    min-width: 180px;
+    padding: 8px 32px;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+.button__text{
+    font-weight: $font-weight-button;
+    font-size: $font-size-button;
+    padding: 0 8px;
+    text-transform: uppercase;
+}
+.button__icon{
+    color: $white;
+    font-size: $font-size-button;
+    padding: 0 8px;
+}
+.button:hover{
+    background-color: $color-on-principal;
+    color: $white;
+    box-shadow: 2px 4px 8px 1px $gray-light;
+    text-decoration: none;
+}
+*/
+.btn__principal{
+    @include button($color-principal, none, 100px, $white);
+}
+.btn__text{
+    @include button-text($font-weight-button, $font-size-button);
+}
+.btn__icon{
+    @include button-icon($white, $font-size-button);
+}
+.btn__principal:hover{
+    @include button-hover($color-on-principal, $white);
+}

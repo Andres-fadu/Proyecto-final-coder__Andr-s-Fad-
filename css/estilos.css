@@ -1,0 +1,276 @@
+
+/*estilos generales*/
+h1{
+    font-size: 3rem;
+    font-family: 'Poppins','Roboto', sans-serif;
+    font-weight: bold;
+    letter-spacing: -0.09375rem;
+    color: #202020;
+    margin: 40px 0;
+}
+h2{
+    font-size: 2.8rem;
+    font-family: 'Poppins','Roboto', sans-serif;
+    font-weight: bold;
+    color: #202020;
+    margin: 100px 0;
+
+}
+h3{
+    font-size: 1.75rem;
+    font-family: 'Poppins','Roboto', sans-serif;
+    font-weight: medium;
+    color: #202020;
+    margin: 30px 0;
+}
+p{
+    font-size: 1rem;
+    font-family: 'Poppins','Roboto', sans-serif;
+    font-weight: normal;
+    color: #202020;
+}
+/*estilos navegación home*/
+header{
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+.navigation ul li{
+    display:inline-block;
+}
+.navigation ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+}
+.navigation ul li:hover a{
+    color: #202020;
+    font-size: 1.2rem
+}
+header a{
+    color: #ef3640;
+    font-size: 1rem;
+    font-family: 'Poppins','Roboto', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase
+}
+.menu-icon{
+    display: none;
+}
+.text-home{
+    margin-bottom: 70px;
+}
+
+/*boton call to action
+.button{
+    font-size: 1.2rem;
+    font-family: 'Poppins','Roboto', sans-serif;
+    font-weight: bold;
+    background-color: #202020;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 5px;
+    transition: all 0.4s linear;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+}
+.button:hover{
+    background-color: #ef3640;
+    color: white;
+}
+*/
+/*main*/
+.main{
+    padding-top: 12rem;
+}
+/*
+.text-home h1{
+    padding-bottom: 10px;
+}
+.text-home h2{
+    padding-bottom: 20px;
+}
+*/
+.info{
+    padding-bottom: 30px;
+}
+/*sección portafolio*/
+#portafolio{
+    background-color: #4e4e4e;
+}
+#portafolio h2{
+    color: white;
+}
+#portafolio h3{
+    color: white;
+}#portafolio p{
+    color: white;
+}
+.portfolio-menu{
+    text-align:center;
+    margin: 50px 0;
+}
+.portfolio-menu ul li{
+    display:inline-block;
+    background-color: #767575;
+	margin:0 5px 50px 5px;
+	list-style:none;
+	padding:10px 20px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+    transition:all .5s ease;
+}
+.portfolio-item{
+	width:100%;
+}
+.portfolio-item .item{
+	/*width:303px;*/
+	float:left;
+	margin-bottom:100px;
+}
+table{
+    margin: 50px 0
+}
+/*blog*/
+#blog{
+    background-color: #4e4e4e;
+}
+#blog h2{
+    color: white;
+}
+#blog h3{
+    color: white;
+}#blog p{
+    color: white;
+}
+.blog{
+    margin: 100px 0;
+}
+.blog-img{
+    margin-bottom: 100px;
+}
+.formulario{
+    margin-bottom: 60px;
+}
+/*footer
+#sticky-footer {
+    flex-shrink: none;
+}
+footer{
+    background-color: #202020;
+    padding: 1rem 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+footer p{
+    text-align: center;
+    color: #ef3640;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(118, 118, 118);
+    font-size: 2rem;;
+}
+footer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+footer ul li{
+    display:inline-block;
+}
+footer .social-icons{
+    text-align: center;
+}
+footer ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 1rem 1.5rem;
+    transition: all 0.2s linear;
+}
+footer ul li:hover a{
+    color: #ef3640;
+}
+*/
+@media only screen and (max-width: 768px){
+    header{
+        background-color: white;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+    .logo-nav-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navigation{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .navigation ul{
+        display: none;
+    }
+    .navigation ul.show{
+        display: block;
+    }
+    .navigation ul li{
+        display:block;
+        text-align: right;
+    }
+    .navigation ul li a{
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.4s linear;
+    }
+    .navigation ul li:hover a{
+        color: #202020;
+        font-size: 1.2rem
+    }
+    header a{
+        text-decoration: none;
+        color: #ef3640;
+        font-size: 1rem;
+        font-family: 'Poppins','Roboto', sans-serif;
+        font-weight: 600;
+        text-transform: uppercase
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 0;
+
+    }
+    .material-icons.md-36 {
+        font-size: 36px;
+    }
+    .material-icons.md-light{
+        color: #ef3640;
+    }
+}

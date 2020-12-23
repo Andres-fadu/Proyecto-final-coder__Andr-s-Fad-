@@ -1,0 +1,22 @@
+
+:root {
+  font-size: $font-size-base;
+}
+html, body {
+  color: $color-dark;
+  background: $white;
+  font-family: $main-font;
+  height: 100%;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@for $i from 1 through 3 {
+ .home-h#{$i} { font-size: (1rem - $i* 1.2) + 4 }
+}
+main{
+  margin-top: 5rem;
+}
